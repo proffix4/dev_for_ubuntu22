@@ -1,0 +1,25 @@
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+sudo mysql_secure_installation
+
+----------------------------------
+
+sudo systemctl stop mysql.service
+sudo systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+sudo systemctl start mysql.service
+
+sudo mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassW0Rd++';
+UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root';
+FLUSH PRIVILEGES;
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+quit
+
+systemctl stop mysql.service
+sudo systemctl unset-environment MYSQLD_OPTS
+sudo systemctl start mysql.service
+
+----------------------------------
+
+sudo snap install mysql-workbench-community

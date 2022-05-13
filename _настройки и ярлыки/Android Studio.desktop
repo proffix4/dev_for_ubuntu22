@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Android Studio
+Icon=/opt/dev/android-studio/bin/studio.svg
+Exec=/opt/dev/android-studio/bin/studio.sh
+Actions=
+Categories=Development;

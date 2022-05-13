@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=NetBeans
+Icon=/opt/dev/netbeans/nb/netbeans.icns
+Exec=/opt/dev/netbeans/bin/netbeans
+Actions=
+Categories=Development;

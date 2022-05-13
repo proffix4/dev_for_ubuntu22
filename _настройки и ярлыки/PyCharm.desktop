@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=PyCharm
+Icon=/opt/dev/pycharm/bin/pycharm.svg
+Exec=/opt/dev/pycharm/bin/pycharm.sh
+Actions=
+Categories=Development;
