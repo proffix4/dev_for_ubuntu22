@@ -1,0 +1,1 @@
+ssh-keygen -t ecdsa -b 521 -C "proffix4@gmail.com"
