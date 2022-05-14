@@ -9,6 +9,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 sudo apt install telegram-desktop -y
 sudo snap install whatsie
 sudo snap install obs-studio
+sudo snap set system refresh.retain=2
 
 sudo apt install default-jdk -y
 
