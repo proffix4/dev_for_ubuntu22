@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt install gthumb retext qbittorrent gtkhash img2pdf okular okular-extra-backends calibre -y
-sudo apt install gnome-shell-extension-manager menulibre pdfarranger -y
+sudo apt install gnome-shell-extension-manager menulibre pdfarranger drawing -y
 sudo apt install curl wget xfburn gparted synaptic gdebi smartmontools pavucontrol -y
 
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
@@ -32,7 +32,7 @@ sudo apt install python3-pip python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tool
 sudo apt install pyqt5-dev-tools python3-dev libjpeg8-dev python3-tk python3-matplotlib -y
 pip3 install setuptools numpy pandas openpyxl xlrd
 pip3 install python-docx XlsxWriter openpyxl 
-pip3 install ebooklib pykson bs4
+pip3 install ebooklib pykson bs4 pygame
 
 sudo apt install nasm edb-debugger -y
 sudo apt install valac gtk-sharp2 -y
