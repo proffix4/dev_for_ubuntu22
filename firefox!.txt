@@ -1,0 +1,25 @@
+https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
+
+1) sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+
+2)
+
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+
+
+3)
+
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+
+4) sudo apt install firefox -y
+
+5) перенос профиля вручную и его переименование
+
+6) sudo snap remove firefox
+
+7) Ура !!!
